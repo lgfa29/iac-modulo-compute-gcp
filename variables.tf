@@ -39,3 +39,8 @@ variable "labels" {
   description = "Lista de labels para nossa instância maneira"
   type        = map(string)
 }
+
+variable "tags" {
+  description = "Lista de tags de rede para associar na instância"
+  type        = list(string)
+}

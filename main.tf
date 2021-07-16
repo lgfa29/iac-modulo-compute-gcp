@@ -4,6 +4,9 @@ resource "google_compute_instance" "default" {
   machine_type = var.machine_type
   zone         = var.zone
   labels       = var.labels
+  tags         = var.tags
+
+  allow_stopping_for_update = true
 
   boot_disk {
     initialize_params {
@@ -15,6 +18,11 @@ resource "google_compute_instance" "default" {
     network            = var.network
     subnetwork         = var.subnetwork
     subnetwork_project = var.project
+  }
 
+  service_account {
+    scopes = [
+      "https://www.googleapis.com/auth/compute.readonly",
+    ]
   }
 }
