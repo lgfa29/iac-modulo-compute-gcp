@@ -6,6 +6,7 @@ O formato é baseado no [Mantenha um Changelog](https://keepachangelog.com/pt-BR
 e este projeto segue o [Versionamento Semântico](https://semver.org/lang/pt-BR/spec/v2.0.0.html).
 
 ## [Não publicado]
+- Adicionada variável de `service_account_scopes` [[GH-11](https://github.com/mentoriaiac/iac-modulo-compute-gcp/pull/11)]
 
 ## [0.1.0] - 2021-09-08
 ### Adicionado
